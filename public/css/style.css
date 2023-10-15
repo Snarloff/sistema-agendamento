@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600;700&display=swap');
+
+html * {
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+	scroll-behavior: smooth;
+}
+
+html, body { 
+	overflow: hidden, height: 100% 
+}
+
+body {
+	background-color: #161623;
+}
+
+.contact-background {
+	background-color: #12121f
+}
+
+a:hover {
+	color: #740CFE !important;
+	text-decoration: none !important;
+}
+
+.link {
+	font-size: 18px;
+}
+
+.text-purple {
+	color:  #740CFE;
+}
+
+.text-intro {
+	font-size: 80px;
+}
+
+.btn-rounded {
+	border: 1px solid #740CFE !important;
+	background-color: #740CFE;
+	color: white !important;
+	border-radius: 20px !important;
+}
+
+.btn-rounded:hover {
+	background-color: #8b33ff;
+}
+
+.btn-contact {
+	border: 1px solid #740CFE !important;
+	background-color: #740CFE;
+	color: white !important;
+	border-radius: 5px !important;
+}
+
+.card-prop {
+	border-radius: 15px !important;
+}
+
+.input-contact {
+	border-radius: 15px !important;
+	height: 45px !important;
+}
+
+@media only screen and (max-width: 600px) {
+	.position{
+		position: absolute; text-align: center; bottom: 90px; left: 11rem;
+	}
+}
+
+.btn-circle.btn-xl {
+	width: 50px;
+	height: 50px;
+	padding: 10.5px 12px;
+	border-radius: 35px;
+	font-size: 24px;
+	line-height: 1.33;
+}
+
+.btn-circle {
+	width: 30px;
+	height: 30px;
+	padding: 6px 0px;
+	border-radius: 15px;
+	text-align: center;
+	font-size: 12px;
+	line-height: 1.42857;
+}
+
+::-webkit-scrollbar {
+	width: 12px;
+}
+
+::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+	border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}

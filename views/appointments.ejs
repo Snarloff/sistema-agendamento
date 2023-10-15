@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Consulta do Paciente: <%=appointment.name%></title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/lib/main.min.css">
+	<script src="lib/main.min.js"></script>
+
+</head>
+<body>
+
+	<div class="container" style="padding-top: 7%;">
+		<div class="row d-flex justify-content-center">
+			<div class="col-md-10">
+
+				<div class="card card-prop mx-auto" style="background-color: #27293d;">
+					<h4 class="card-title text-white text-center mb-3 mt-4">Dados da Consulta</h4>
+					<div class="card-body">
+						<table class="table">
+							<thead>
+								<tr>
+									<th class="text-white" scope="col">Nome</th>
+									<th class="text-white" scope="col">Email</th>
+									<th class="text-white" scope="col">Descrição</th>
+									<th class="text-white" scope="col">CPF</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="text-white"><%=appointment.name%></td>
+									<td class="text-white"><%=appointment.email%></td>
+									<td class="text-white"><%=appointment.description%></td>
+									<td class="text-white"><%=appointment.cpf%></td>
+								</tr>
+							</tbody>
+						</table>
+
+						<% if (!appointment.finished) { %>
+							<form method="POST" action="/finalizar">
+								<input type="hidden" name="id" value="<%=appointment._id%>">
+								<button class="btn btn-outline-danger mt-3 float-right">Finalizar consulta</button>
+							</form>
+						<% } %>
+
+					</div>
+				</div>
+				
+			</div>
+
+
+		</div>
+
+	</div>
+
+
+
+
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+</body>
+</html>
