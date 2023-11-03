@@ -1,5 +1,7 @@
 # Sistema de Agendamento
 
+![agendar-consultas](https://github.com/Snarloff/sistema-agendamento/assets/46792575/53257fa0-7ae4-4c49-a165-6d4a323ffd18)
+
 Este é um projeto de sistema de agendamento desenvolvido como parte de estudos anteriores. O sistema permite que os usuários cadastrem e visualizem agendamentos em um calendário, vejam detalhes de agendamentos individuais e recebam notificações por e-mail quando uma consulta está próxima.
 
 ## Visão Geral
